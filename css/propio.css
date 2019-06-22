@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+p strong {
+    font-weight: bold;
+    color: #000;
+}
+
+body {
+    background: #f8f9fa;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #B6B6B6;
+    min-width: 550px;
+}
+
+.articulo {
+    font-size: 2em;
+}
+
+h2, h3 {
+    color: #771cff;
+}
+
+h4 {
+    color: chocolate;
+}
+
+.navbar-brand {
+    padding: 30px;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+#enviado{
+    margin-bottom: 50px;
+}
+
+#navbarTogglerDemo01 .navbar-brand h1{
+    font-size: 1.3rem;
+    letter-spacing: 8.5px;
+    text-align: center;
+}
+
+#navbarTogglerDemo01 .navbar-brand h1 small{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.collapse .navbar-nav .active {
+    border: 1px solid #771cff !important;
+}
+
+.collapse .navbar-nav .active a{
+    color: #771cff !important;
+}
+
+.collapse .navbar-nav .nav-item {
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid #f8f9fa;
+    color: #000;
+}
+
+.collapse .navbar-nav .nav-item a{
+    padding: 5px !important;
+}
+
+.nav-link:hover {
+    color: #771cff !inportant;
+}
+
+.paral {
+    padding: 5rem;
+    background-image: url(../img/tijera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.oferta {
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.buru {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.diestra {
+    float: right;
+}
+
+.servicios {
+    min-width: 220px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.trasera {
+    width: 100%;
+    height: 132px;
+}
+
+.aire {
+    margin-bottom: 5em;
+}
+
+.carousel {
+    border: 0px;
+}
+
+footer {
+    background-color: #000;
+}
+
+.grieta {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.marca {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.horario {
+    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 5px;
+    background-color: #000;
+    text-align: center;
+}
+
+.horario h3{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.horario p{
+    font-size: 1.3em;
+}
+.relog {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.carousel-caption {
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.subpie,
+.subpie a{
+    font-size: 1em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.subpie a:hover {
+    color: #771cff;
+}
+
+.enlace {
+    font-size: 1.5em;
+    color: #771cff;
+}
+
+.fa-long-arrow-alt-right {
+    font-size: 2em;
+}
+
+.linea {
+    background-color: #858585;
+}
+
+.pasillo {
+    padding: 5em;
+}
+
+.redes a{
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    color: #f2f2f2;
+}
+
+.redes a:hover {
+    color: #771cff;
+}
+
+.bloquepie p{
+    font-size: 1.4em;
+    color: #f2f2f2;
+}
+
+.bloquepie h2{
+    font-size: 1.6em;
+    color: #999999;
+}
+
+.mediofuter1 {
+    float: left;
+    width: 45%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.bloquepie {
+    clear: both;
+    padding-bottom: 2em;
+}
+
+.mediofuter2 {
+    float: left;
+    width: 45%;
+    padding-left: 10%;
+    border-left: 1px solid #858585;
+}
+
+.transportes {
+    color: #292929;
+    font-size: 1.7em;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #f2f2f2;
+}
+
+.airetop {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloquepie3 {
+    clear: both;
+    padding-top: 3em;
+}
+
+.linksfooter {
+    list-style: none;
+}
+
+
+.linksfooter li a {
+    color: #858585;
+}
+
+#flores {
+    margin-left: -2%;
+}

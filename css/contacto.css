@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#hire {
+    background-image: url(../img/made3.jpg);
+    margin: 60px auto 120px;
+    border-top: 15px solid #000;
+    text-align: center;
+    padding: 50px 0 110px;
+    width: 80%;
+    max-width: 1100px;
+}
+
+#hire h1 {
+    margin-bottom: 40px;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: grey;
+}
+
+h5 {
+    color: #000;
+}
+
+#hire form {
+    width: 58.3333333333%;
+    margin: 0 auto;
+}
+
+#hire form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#hire form .field label {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 1.45em;
+    letter-spacing: 0.075em;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+}
+
+#errorNom {
+    opacity: 0;
+}
+
+#errorMail {
+    opacity: 0;
+    
+}
+
+#errorTel {
+    opacity: 0;
+    
+}
+
+#errorMsg {
+    opacity: 0;
+    
+}
+
+#hire form .field label + span{
+    font-family: 'SSStandard';
+    color: #ff0000;
+    display: block;
+    position: absolute;
+    padding: 1.1em;
+    top: 0px;
+    left: 60px;
+    font-size: 1.1em;
+    background-color: #000;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+}
+
+#hire form .field input[type="text"],
+#hire form .field input[type="email"],
+#hire form .field textarea {
+    width: 100%;
+    box-sizing: content-box;
+    overflow: hidden;
+    border: none;
+    background: #E8E9EA;
+    margin: 0;
+    padding: 18px 0px;
+    text-align: center;
+    color: #000;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+#hire form .field textarea#mensaje {
+    width: 100%;
+    height: 21px;
+    resize: none;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+}
+
+#hire form .field input[type="text"]:focus,
+#hire form .field input[type="text"].focused,
+#hire form .field input[type="email"]:focus,
+#hire form .field input[type="email"].focused,
+#hire form .field textarea:focus,
+#hire form .field textarea.focused {
+    outline: none;
+}
+
+#hire form .field input[type="text"]:focus#mensaje,
+#hire form .field input[type="text"].focused#mensaje,
+#hire form .field input[type="email"]:focus#mensaje,
+#hire form .field input[type="email"].focused#mensaje,
+#hire form .field textarea:focus#mensaje,
+#hire form .field textarea.focused#mensaje {
+    padding-bottom: 150px;
+}
+
+#hire form .field input[type="text"]:focus + label,
+#hire form .field input[type="text"].focused + label,
+#hire form .field input[type="email"]:focus + label,
+#hire form .field input[type="email"].focused + label,
+#hire form .field textarea:focus + label,
+#hire form .field textarea.focused + label {
+    width: 21%;
+    background: #7700ff;
+    color: #000;
+}
+
+#hire form .field input[type="text"].focused + label,
+#hire form .field input[type="email"].focused + label,
+#hire form .field textarea.focused + label {
+    color: #7700ff;
+}
+
+#hire form .field:hover label {
+    width: 21%;
+    background: #000;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    #hire form .field input[type="text"]:focus + label,
+    #hire form .field input[type="text"].focused + label,
+    #hire form .field input[type="email"]:focus + label,
+    #hire form .field input[type="email"].focused + label,
+    #hire form .field textarea:focus + label,
+    #hire form .field textarea.focused + label {
+        display: none;
+    }
+}
+
+#hire form input[type="submit"] {
+    background: #000;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+}
+
+#hire form input[type="submit"]:hover {
+    background: #7700ff;
+    color: #fff;
+}
+
+#hire form input[type="submit"]:focus {
+    outline: none;
+    color: white;
+    background: #771cff;
+}

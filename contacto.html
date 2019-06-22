@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diagonal</title>
+    <link rel="stylesheet" href="css/formulario.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/contacto.css" />
+    <link rel="stylesheet" type="text/css" href="css/propio.css" />
+    <!--  favicon -->
+    <link rel="shortcut icon" href="http://alm-area.com/weblanbide/txema/diagonal/img/favicon.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--    <script type="text/javascript" src="js/prefixfree.min.js"></script>-->
+    <script type="text/javascript" src='js/jquery.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.js'></script>
+    <script type="text/javascript" src='js/bootstrap.bundle.js'></script>
+    <script type="text/javascript" src='js/bootstrap.bundle.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17264665-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-17264665-1');
+
+    </script>
+    
+</head>
+
+<body>
+    <div class="buru">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="index.html">
+                    <h1><b>&nbsp;DIAGONAL</b><small><br>Peluquería y estilismo unisex</small></h1>
+                </a>
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Donde&nbsp;estamos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <a name="ancla-01"><br></a>
+    <div class="trasera"></div>
+    <!--Hasta aqui no tocar en todas las urls mantener igual-->
+
+    <div id="hire">
+        <h5>CONTACTA CON NOSOTROS</h5>
+        <br>
+        <form id="form_contacto" method="POST" action="correo.php">
+            <div class="field name-box">
+                <input type="text" id="name" name="nombre" placeholder="Campo requerido" />
+                <label id="lvlNom" for="name">Nombre</label>
+                <span id="errorNom">Campo requerido</span>
+            </div>
+
+            <div class="field name-box">
+                <input type="email" id="email" name="email" placeholder="Campo requerido" />
+                <label for="text">Email</label>
+                <span id="errorMail">Campo requerido</span>
+            </div>
+
+            <div class="field name-box">
+                <input type="text" name="asunto" placeholder="Campo requerido" />
+                <label for="text">Asunto</label>
+                <span id="errorMail">Campo requerido</span>
+            </div>
+           
+            <div class="field name-box">
+                <input type="text" id="phone" name="phone" />
+                <label for="phone">Teléfono</label>
+            </div>
+
+
+            <div class="field name-box">
+                <textarea id="mensaje" name="message" rows="4" placeholder="Tu mensaje va aquí..." ></textarea>
+                <label for="mensaje">Mensaje</label>
+                <span id="errorMsg">Campo requerido</span>
+            </div>
+
+            <input id="btnSend" type="submit" value="Enviar" />
+        </form>
+    </div>
+
+    <!--Desde aqui no tocar en todas las urls mantener igual-->
+    <footer class="container-fluid">
+        <div class="row pasillo">
+            <div class="bloquepie col-sm-12 col-md-12 col-lg-4">
+                <h3>Formas de contacto</h3>
+                <hr class="linea">
+                <div class="mediofuter1">
+                    <h2>Dirección postal:</h2>
+                    <p>C/Isabel II Nº6</p>
+                    <p>CP: 20011</p>
+                    <p>Donostia, Guipúzcoa</p>
+                </div>
+                <div class="mediofuter2">
+                    <h2>Telefono:</h2>
+                    <p>+34 943 10 99 03</p>
+                    <h2>Email:</h2>
+                    <p>hola@peluqueriadiagonal.com</p>
+                    <h2>Redes Sociales:</h2>
+                    <div class="redes">
+                        <a class="red" href="" target="_blank"><i class="fab fa-facebook-f" title="Facebook"></i></a>
+                        <a class="red" href="" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a>
+                        <a class="red" href="" target="_blank"><i class="fab fa-tumblr" title="Tumblr"></i></a>
+                        <a class="red" href="https://www.instagram.com/Peluqueria_Diagonal_SS/" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
+                    </div>
+                </div>
+                <div class="bloquepie3">
+                    <hr class="linea">
+                    <div class="airetop">
+                        <a href="index.html"><img src="img/logotipo.png" width="100%"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bloquepie col-sm-12 col-md-12 col-lg-4">
+                <h3>Buzón de sugerencias</h3>
+                <hr class="linea">
+                <form name="formulario_contacto" method="POST" action="correo.php" id="form">
+                    <input name="nombre" maxlength="50" type="text" placeholder="NOMBRE">
+                    <input id="email" name="email" type="email" placeholder="E-MAIL">
+                    <input type="tel" name="phone" placeholder="TELEFONO">
+                    <input type="text" name="asunto" placeholder="ASUNTO">
+                    <textarea id="message" name="message" type="text" placeholder="MENSAJE"></textarea>
+                    <input id="submit" type="submit" value="ENVIAR!">
+
+                </form>
+            </div>
+
+            <div class="bloquepie col-sm-12 col-md-12 col-lg-4">
+               
+                <h3>Enlaces internos</h3>
+                <hr class="linea">
+                
+                <div class="mediofuter1">
+                    <h2>Inicio:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="index.html#ancla-00"><p>Inicio</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-01"><p>Borja</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-02"><p>Horario</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-03"><p>Servicios</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-04"><p>Catalogo</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-05"><p>Pie de página</p></a>
+                    </li>
+                    </ul>
+                    
+                    <h2>Catalogo:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="catalogo.html#ancla-01"><p>Balmain</p></a>
+                    </li>
+                    <li>
+                        <a href="catalogo.html#ancla-02"><p>Morocanoil</p></a>
+                    </li>
+                    <li>
+                        <a href="catalogo.html#ancla-03"><p>Pie de página</p></a>
+                    </li>
+                    </ul>
+                </div>
+                
+                <div class="mediofuter2">
+                    <h2>Contacto:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="contacto.html#ancla-01"><p>Formulario de contacto</p></a>
+                    </li>
+                    </ul>
+                    
+                    <h2>Donde estamos:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="media.html#ancla-01"><p>Transportes</p></a>
+                    </li>
+                    <li>
+                        <a href="media.html#ancla-02"><p>Mapa</p></a>
+                    </li>
+                    <li>
+                        <a href="media.html#ancla-03"><p>Pie de página</p></a>
+                    </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="subpie">
+            <hr class="linea">&#169; Copyright. Web site diseñado y desarrollado por <a href="http://alm-area.com/weblanbide/txema/portfolio/" target="_blank">Txema Illarramendi Jimeno.</a>
+        </div>
+    </footer>
+</body>
+    <script>
+    </script>
+</html>

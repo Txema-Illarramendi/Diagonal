@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diagonal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/formulario.css" />
+    <link rel="stylesheet" href="css/propio.css" />
+    <!--  favicon -->
+    <link rel="shortcut icon" href="http://alm-area.com/weblanbide/txema/diagonal/img/favicon.png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src='js/jquery.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.js'></script>
+    <script type="text/javascript" src='js/bootstrap.bundle.js'></script>
+    <script type="text/javascript" src='js/bootstrap.bundle.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17264665-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-17264665-1');
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-fancybox]').fancybox({
+                protect: true;
+            });
+            $('[data-fancybox="images"]').fancybox({
+                caption: function(instance, item) {
+                    var caption = $(this).data('caption') || '';
+
+                    if (item.type === 'image') {
+                        caption = (caption.length ? caption + '<br />' : '') + '<a href="' + item.src + '">Download image</a>';
+                    }
+
+                    return caption;
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="buru">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="index.html">
+                    <h1><b>&nbsp;DIAGONAL</b><small><br>Peluquería y estilismo unisex</small></h1>
+                </a>
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="media.html">Donde&nbsp;estamos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <a name="ancla-01"><br></a>
+    <div class="trasera aire"></div>
+    <!--Hasta aqui no tocar en todas las urls mantener igual-->
+    <div class="container">
+        <div class="marca aire">
+            <img src="img/productos/banner.png" width="100%">
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img1.jpg" data-caption="<h2>Repair Mask 200ml</h2>
+<p>¡Un cabello perfectamente hidratado y nutrido gracias a nuestra fórmula mejorada!<br>  
+    Cuando tu cabello necesite nutrición adicional periodicamente, este es el producto perfecto. Su nombre lo dice todo; la Repair Mask trata el cabello seco y frágil, aportando además una sensación suave y lujosa. Una mascarilla enriquecida con la fragancia de firma Balmain que aporta instantáneamente una experiencia de salón selecto.</p>
+• Sin Parabenos
+• Apto para cabello tratado y teñido.
+• Repara la elasticidad natural del cabello">
+           <img src="img/productos/img1.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img2.jpg" data-caption="<h2>Shine Wax 100ml</h2>
+<p>¡Crea un acabado impoluto con este producto de estilismo imprescindible! Una cera manejable que aporta definición, brillo y sujeción flexible que durarán todo el día. Se retira fácilmente con el lavado gracias a su base acuosa. Realzado con la fragancia de la firma Balmain, esta cera es imprescindible para hombres y mujeres a la última.</p>
+• Sujeción flexible (modificable)
+• Base acuosa
+• No se seca, fácil de retirar.">
+            <img src="img/productos/img2.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img3.jpg" data-caption="<h2>Matt Clay Strong 100ml</h2>
+<p>¡El producto para crear el look definitivo mate con la máxima textura! La arcilla dura se convierte en una sesión viable en las manos y suaviza el frizz para proporcionar una fijación duradera con un acabado seco. ¡Vigorizada con la fragancia característica de Balmain, esta arcilla de fijación fuerte es imprescindible tanto para hombres como para mujeres a la moda!</p>
+• Máxima textura 
+• Fuerte Hold 
+• Aspecto natural y sin brillo">
+            <img src="img/productos/img3.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img4.jpg" data-caption="<h2>Revitalizing Mask 200ml</h2>
+<p>¡Devuelve la salud a tu cabello! La Revitalizing Mask es un bello producto que nutre intensamente el cabello dañado. Concede a tu cabello la nutrición que ansía con este intenso tratamiento reparador para cabellos secos, dañados o sobreprocesados.</p>
+• Sin parabenos
+• Nutrición óptima para cabello dañado
+• Logra un cabello brillante, elástico y manejable">
+            <img src="img/productos/img4.jpg" width="100%"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img5.jpg" data-caption="<h2>Revitalizing Shampoo 300ml</h2>
+<p>¡Revitaliza! Nuestro Revitalizing Shampoo es el champú supremo para reparar cabellos secos y dañados. Su fórmula limpia suavemente mientras nutre en profundidad, dejando un cabello en condiciones óptimas. Hidrata, revitaliza y reconstruye la fortaleza del cabello desde el interior. Contiene una fina selección de vitaminas E, F y P. Los ingredientes definitivos para obtener unos mechones brillantes, sanos y deslumbrantes.</p>
+• Sin parabenos
+• Nutrición óptima para cabello dañado
+• Logra un cabello manejable y suave">
+            <img src="img/productos/img5.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img6.jpg" data-caption="<h2>Moisturizing Conditioner 300ml</h2>
+<p>¡Un cabello perfectamente nutrido e hidratado gracias a nuestra fórmula mejorada!
+    Este bálsamo altamente nutritivo está enriquecido con puro Aceite de Argán y la fragancia de firma Balmain. El Moisturizing Conditioner es apto para cabello natural y teñido. Este acondicionador proporciona brillo y elasticidad. La línea Moisturizing Care protege el cabello de los rayos solares.</p>
+• Sin parabenos
+• Acondicionador revitalizante y nutritivo
+• Refuerza y protege el cabello">
+            <img src="img/productos/img6.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img7.jpg" data-caption="<h2>Moisturizing Shampoo 300ml</h2>
+<p>¡Un cabello perfectamente hidratado y nutrido gracias a nuestra fórmula mejorada! 
+    Este champú hidrata en profundidad gracias a su fórmula enriquecida con puro Aceite de Argán orgánico, apto para cabello natural o teñido. Este champú logra un cabello fuerte, brillante y manejable, además de nutrirlo intensamente.</p>
+• Sin parabenos
+• Consigue brillo y elasticidad naturales 
+• Impulso rejuvenecedor instantáneo">
+            <img src="img/productos/img7.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img8.jpg" data-caption="<h2>Session Spray Strong 300ml</h2>
+<p>Spray de moldeado de alto rendimiento para fijar, controlar y dar acabado. Balmain Paris Hair Couture ha desarrollado un spray de alta sujeción que despliega una creatividad ilimitada. El spray es resistente a la humedad y aporta brillo y cuerpo inmediatos. El Session Spray Strong aporta además protección UV.</p>
+• Spray de moldeado de alto rendimiento
+• Fija, controla y da un acabado perfecto
+• Sujeción duradera">
+            <img src="img/productos/img8.jpg" width="100%"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img9.jpg" data-caption="<h2>Revitalizing Conditioner 300ml</h2>
+<p>¡Ha llegado el momento de una inyección de energía! Nuestro Revitalizing Conditioner es el acondicionador definitivo: una fórmula ligera y nutritiva para cabello seco o dañado. Contiene una fina selección de vitaminas E, F y P. Los ingredientes definitivos para obtener unos mechones brillantes, sanos y deslumbrantes.</p>
+• Sin parabenos
+• Nutrición óptima para cabello dañado
+• Logra un cabello manejable y suave">
+            <img src="img/productos/img9.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img10.jpg" data-caption="<h2>Session Spray Medium 300ml</h2>
+<p>Un spray de fuerza media es imprescindible para crear peinados con movimiento. El Session Spray Medium es un spray de acabado que mantiene la elasticidad y la libertad de movimientos, pero ofreciendo a la vez control duradero en el cabello. Este spray es resistente a la humedad, se retira fácilmente con el cepillado y contiene protección UV.</p>
+• Para una sujeción flexible y dinámica
+• Sujeción duradera
+• Contiene protección UV">
+            <img src="img/productos/img10.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img11.jpg" data-caption="<h2>Volume Shampoo 300ml</h2>
+<p>Este champú de fórmula ligera aporta volumen y cuerpo a todo tipo de cabellos. Un suave y lujoso champú para uso diario; fácilmente manejable. Para un brillo y un estilismo perfectos. Sin sulfatos ni parabenos.</p>
+• Champú ligero voluminizador
+• Proporciona un cabello con cuerpo, brillo y volumen adicional
+• Sin sulfatos ni parabenos">
+            <img src="img/productos/img11.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img12.jpg" data-caption="<h2>Texturizing Salt Spray 200ml</h2>
+<p>La sal marina añade cuerpo, así como sujeción, control, textura y resistencia a la humedad. Un refrescante estilo veraniego al alcance de la mano gracias a este producto. ¡El Salt Spray de Balmain Paris es perfecto para ir a la última!</p>
+• Aporta textura y cuerpo
+• Crea hermosas olas playeras
+• Resistente a la humedad">
+            <img src="img/productos/img12.jpg" width="100%"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img13.jpg" data-caption="<h2>Silk Perfume 200ml</h2>
+<p>Desenreda y repara el cabello dañado, aportando un brillo duradero y protección contra los daños externos. Con una fórmula específicamente desarrollada para proporcionar un acabado suave y sedoso, e infundido con puro Aceite de Argán.
+    Disponible por separado: Vaporizador de lujo que añade un toque de moda y lujo franceses.</p>
+• Aroma veraniego para el cabello
+• Enriquecido con Argán y Proteínas de Seda
+• Mantiene el cabello radiante">
+            <img src="img/productos/img13.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img14.jpg" data-caption="<h2>Volume Conditioner 300ml</h2>
+<p>Aporta volumen gracias a su fórmula ligera, de alto poder nutritivo y reparador. Lograrás un cabello con cuerpo. Sin sulfatos ni parabenos.</p>
+• Acondicionador voluminizador de fórmula ligera
+• Fortalece y protege el cabello
+• Sin sulfatos ni parabenos">
+            <img src="img/productos/img14.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img15.jpg" data-caption="<h2>Texturizing Volume Spray 200ml</h2>
+<p>Un versátil spray que realza instantáneamente el cabello desde la raíz para lograr un volumen definitivo y una sujeción firme. Este producto añade volumen duradero, definición y textura al cabello en cuestión de minutos. Da nueva vida a tu pelo con resultados evidentes. Apto para uso diario.</p>
+• Realza desde la raíz
+• Sujeción fuerte
+• Efecto duradero">
+            <img src="img/productos/img15.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img16.jpg" data-caption="<h2>Dry Shampoo 300ml</h2>
+<p>Este champú seco refresca instantáneamente absorbiendo la grasa y renovando tu peinado sin necesidad de lavado. Perfecto para crear texturas mate y volumen en tu cabello. Apto para todo tipo de cabello.</p>
+• Revive el cabello como recién lavado
+• Lava el cuero cabelludo y retira el exceso de grasa
+• Aporta brillo y frscor, dejando el aroma exclusivo de la casa Balmain">
+            <img src="img/productos/img16.jpg" width="100%"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img17.jpg" data-caption="<h2>Moisturizing Shampoo travel size 50ml</h2>
+<p>Champú altamente nutritivo enriquecido con puro Aceite de Argán. Apto para cabello natural y teñido. Protege, desenreda y revitaliza, aportando además brillo y manejabilidad.</p>
+• Impulso rejuvenecedor instantáneo
+• Fortalece, flexibiliza y aporta brillo
+• Sin parabenos">
+            <img src="img/productos/img17.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img18.jpg" data-caption="<h2>Pre Styling Cream 150ml</h2>
+<p>Prepara tu cabello con la Pre Styling Cream. Ésta aporta un control perfecto durante el peinado, rizado o secado. O alternativamente te permitirá refrescar tu rizado de ayer. La fórmula reduce la fricción y el enredo, añade volumen y brillo y asegura una fijación firme de tu cabello.  Sus ingredientes, Proteína de Seda y Aceite de Argán, estimulan una retención óptima de la humedad en el interior de las células capilares, contribuyendo a la recuperación y protección del cabello dañado contra las agresiones medioambientales.</p>
+• Hidratante diario para tu cabello
+• Reduce la fricción 
+• Reduce el tiempo de secado">
+            <img src="img/productos/img18.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img19.jpg" data-caption="<h2>Moisturizing Conditioner travel size 50ml</h2>
+<p>Se trata de un bálsamo altamente hidratante enriquecido con puro Aceite de Argán. Apto para cabello natural y teñido. Protege, desenreda y revitaliza, aportando además brillo y manejabilidad. </p>
+• Acondicionador revitalizante y nutritivo
+• Refuerza y protege el cabello
+• Sin parabenos">
+            <img src="img/productos/img19.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img20.jpg" data-caption="<h2>Volume Mousse Strong 300ml</h2>
+Mousse de moldeado flexible y anti-estática que proporciona volumen, acondiciona, repara y protege el cabello.
+• Espuma moldeadora voluminizadora
+• Acondiciona y repara el cabello dañado
+• Peinado versátil sin comprometer la fijación">
+            <img src="img/productos/img20.jpg" width="100%"></a>
+            </div>
+        </div>
+        <div class="row aire">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img21.jpg" data-caption="<h2>Styling Gel Strong 100ml</h2>
+<p>¡La formulación perfecta para looks inspirados en pasarelas potentes! Un gel de estilo ligero y versátil con una sujeción máxima y duradera. Se puede lavar fácilmente debido a la fórmula a base de agua. ¡Vigorizado con la fragancia característica de Balmain, este gel de estilo es imprescindible tanto para hombres como para mujeres de moda!</p>
+• fijación de larga duración
+• Cabellos húmedos o secos
+• No es flexible">
+            <img src="img/productos/img21.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img22.jpg" data-caption="<h2>Matt Paste 100ml</h2>
+<p>¡El último diseño esencial para moldear y dar forma a tu cabello en cualquier estilo! Con la textura suave y el agarre que se puede mover de forma reversible, crea la última apariencia flexible que se puede volver a hacer en cualquier momento del día. Proporciona textura y definición con un acabado mate y se puede lavar fácilmente gracias a la fórmula a base de agua. ¡Vigorizado con la fragancia característica de Balmain, este Matt Paste es imprescindible tanto para hombres como para mujeres de moda!</p>
+• Asimiento remouldable
+• Acabado mate, aspecto natural
+• Fragancia Signature Balmain">
+            <img src="img/productos/img22.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img23.jpg" data-caption="<h2>Leave-In Conditioning Spray 200ml</h2>
+<p>El perfecto acondicionador permanente para todo tipo de cabellos. Acondiciona el cabello y el cuero cabelludo, suavizando las cutículas. Aporta cuerpo, volumen, cuidado y acondicionamiento durante todo el día. Hace el cabello manejable, flexible y brillante. Incluye filtros protectores UV. Libre de parabenos y sulfatos.  </p>
+• Suaviza las cutículas capilares
+• Contiene protección UV
+• Sin sulfatos ni parabenos">
+            <img src="img/productos/img23.jpg" width="100%"></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img24.jpg" data-caption="<h2>Argan Moisturizing Elixir 100ml</h2>
+<p>Este serum rejuvenecedor a base de puro Argán orgánico aporta un brillo lustroso y da un impulso instantáneo a tu cabello, dándole un aspecto saludable sin dejar residuos. </p>
+• Aporta brillo
+• Hidratante
+• Suaviza el cabello dañado">
+            <img src="img/productos/img24.jpg" width="100%"></a>
+            </div>
+        </div>
+        <hr>
+        <!--AQUÍ ENPIEZA LA SEGUNDA MARCA-->
+        
+    <a name="ancla-02"><br></a>
+    <div class="trasera"></div>
+        <div class="marca aire">
+            <img src="img/productos/logo.png" width="100%">
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img25.jpg" data-caption="<h2>TRATAMIENTO MOROCCANOIL</h2><h4>25ml - 15,00€ / 100ml - 46,00€</h4><p>Obtenga el cabello sedoso, brillante y saludable que siempre ha deseado. El Tratamiento Moroccanoil® es el producto pionero para el cuidado del cabello a base de aceite que generó la categoría de aceite de argán en todo el mundo. Es la base esencial para crear peinados. El Tratamiento Moroccanoil puede utilizarse para acondicionar, peinar o dar un acabado final al cabello. Enriquecido con aceite de argán rico en antioxidantes y vitaminas que aumentan el brillo, este tratamiento transformador desenreda el cabello, acelera el tiempo de secado, y aumenta el brillo. Asimismo, aportará a su cabello manejabilidad, sedosidad, y nutrición con cada uso. Eclipsa al resto.</p>">
+            <img src="img/productos/img25.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img26.jpg" data-caption="<h2>TRATAMIENTO MOROCCANOIL LIGHT</h2><h4>25ml - 15,00€ / 100ml - 46,00€</h4><p>Disfrute un cabello sano, sedoso, brillante y lleno de vida. El Tratamiento Moroccanoil® Light está específicamente formulado para las necesidades del cabello teñido en tonos claros (incluyendo platino y blanco), y del cabello fino. Es la base esencial para crear peinados. El Tratamiento Moroccanoil puede ser utilizarse para acondicionar, peinar o dar un acabado final al cabello, todo en un solo producto. Enriquecido con aceite de argán rico en antioxidantes y vitaminas que aumentan el brillo, este tratamiento transformador desenreda el cabello, acelera el tiempo de secado, y aumenta el brillo dejando el cabello sedoso y manejable como nunca antes. Eclipsa al resto..</p>">
+            <img src="img/productos/img26.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img27.jpg" data-caption="<h2>TRATAMIENTO CUERO CABELLUDO GRASO</h2><h4>45ml - 37,00€</h4><p>Un cuero cabelludo graso puede dejar el cabello sin vida. El Tratamiento Cuero Cabelludo Graso Moroccanoil® es un tratamiento profesional para el cuero cabelludo diseñado para controlar la producción excesiva de aceite y revivir el cabello. Esta fórmula concentrada combina el aceite de argán rico en antioxidantes con aceite de jengibre para ayudar a corregir los desequilibrios del cuero cabelludo. Asimismo, alivia la inflamación de los folículos pilosos encargados de la producción de aceite. Una vez que los niveles de aceite se regulan, las raíces se realzan logrando un cabello con mayor cuerpo y vida.</p>">
+            <img src="img/productos/img27.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img28.jpg" data-caption="<h2>TRATAMIENTO CUERO CABELLUDO SECO</h2><h4>45ml - 37,00€</h4><p>Nuestro tratamiento profesional para el cuero cabelludo cubre las necesidades del cuero cabelludo seco y escamoso, aliviando inmediatamente la irritación, resequedad, y picazón. El Tratamiento Cuero Cabelludo Seco Moroccanoil® actúa para corregir los desequilibrios del cuero cabelludo y aliviar la irritación mientras revitaliza el cabello. Esta fórmula concentrada está impregnada de aceite de argán rico en antioxidantes, y aceites esenciales de lavanda y geranio, para nutrir y aliviar la piel del cuero cabelludo. El ácido salicílico exfolia suavemente para ayudar a reducir la aparición de escamas. Mejora la circulación. El cabello recibe los beneficios y obtiene una dosis de vitalidad y brillo.</p>">
+            <img src="img/productos/img28.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--        -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img29.jpg" data-caption="<h2>CHAMPÚ HIDRATANTE</h2><h4>250ml - 22,50€</h4><p>Aporte al cabello seco y deshidratado toda la hidración que tanto necesita. El Champú Hidratante Moroccanoil® acondiciona el cabello con aceite de argán rico en antioxidantes, vitamina A, vitamina E, y algas rojas para lograr un cabello que se ve y se siente más saludable. Este suave champú hidratante es adecuado para uso diario y provee óptima hidratación para cabello normal y teñido. Aumenta la manejabilidad, suavidad y brillo de su cabello. No altera el color. Sin sulfatos, fosfatos ni parabenos.</p>">
+            <img src="img/productos/img29.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img30.jpg" data-caption="<h2>ACONDICIONADOR HIDRATANTE</h2><h4>250ml - 24,50€</h4><p>Acondicione y desenrede el cabello deshidratado con el Acondicionador Hidratante Moroccanoil®. Esta fórmula suave de uso diario deja el cabello más suave, manejable, y facilita la creación de estilos y peinados. Su fórmula a base de aceite de argán rico en antioxidantes, vitamina A, vitamina E y algas rojas consigue la máxima hidratación en todo tipo de cabello. No altera el color. Sin sulfatos, fosfatos ni parabenos.</p>">
+            <img src="img/productos/img30.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img31.jpg" data-caption="<h2>CREMA PARA PEINAR HIDRATANTE</h2><h4>300ml - 34,50€</h4><p>La Crema para Peinar Hidratante Moroccanoil® acondiciona, hidrata, y controla el cabello encrespado. Esta crema hidratante sin enjuague crea estilos con suavidad natural. Ideal para secar con secador, suavizar el cabello rebelde, y refrescar estilos y peinados en su segundo día. La crema, impregnada con el nutritivo aceite de argán, añade brillo y definición con fijación suave.</p>">
+            <img src="img/productos/img31.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img32.jpg" data-caption="<h2>MASCARILLA HIDRATANTE INTENSA</h2><h4>250ml - 37,00€</h4><p>Disfrute de un tratamiento que en cinco minutos revitaliza su cabello. La Mascarilla Hidratante Intensa Moroccanoil® aporta un acondicionamiento profundo para cabello seco, de medio a grueso. Formulada con aceite de argán antioxidante e ingredientes nutritivos, esta mascarilla hidrata y acondiciona a la vez que mejora muy notablemente la textura, elasticidad, brillo y manejabilidad del cabello.</p>">
+            <img src="img/productos/img32.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--        -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img33.jpg" data-caption="<h2>MASCARILLA HIDRATANTE ULTRALIGERA</h2><h4>250ml - 42,50€</h4><p>Aporte al cabello seco y deshidratado toda la hidración que tanto necesita. El Champú Hidratante Moroccanoil® acondiciona el cabello con aceite de argán rico en antioxidantes, vitamina A, vitamina E, y algas rojas para lograr un cabello que se ve y se siente más saludable. Este suave champú hidratante es adecuado para uso diario y provee óptima hidratación para cabello normal y teñido. Aumenta la manejabilidad, suavidad y brillo de su cabello. No altera el color. Sin sulfatos, fosfatos ni parabenos.</p>">
+            <img src="img/productos/img33.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img34.jpg" data-caption="<h2>CHAMPÚ REPARADOR HIDRATANTE</h2><h4>250ml - 22,50€</h4><p>Repare el cabello dañado a causa de los tintes, procesos químicos, o el uso del calor para peinados y estilismos. El Champú Reparador Hidratante Moroccanoil® limpia suave y efectivamente el cabello dejándolo con vida, nutrido, fuerte y manejable. Formulado a base de aceite de argán, queratina reconstructiva y ácidos grasos, este champú hidratante repara las fibras y puntas abiertas del cabello restaurando la elasticidad, hidratación y brillo. No altera el color. Sin sulfatos, fosfatos ni parabenos.</p>">
+            <img src="img/productos/img34.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img35.jpg" data-caption="<h2>ACONDICIONADOR REPARADOR HIDRATANTE</h2><h4>250ml - 24,50€</h4><p>La Crema para Peinar Hidratante Moroccanoil® acondiciona, hidrata, y controla el cabello encrespado. Esta crema hidratante sin enjuague crea estilos con suavidad natural. Ideal para secar con secador, suavizar el cabello rebelde, y refrescar estilos y peinados en su segundo día. La crema, impregnada con el nutritivo aceite de argán, añade brillo y definición con fijación suave.</p>">
+            <img src="img/productos/img35.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img36.jpg" data-caption="<h2>MASCARILLA CAPILAR RECONSTITUYENTE</h2><h4>250ml - 45,50€</h4><p>La Mascarilla Capilar Reconstituyente Moroccanoil® está formulada para el cabello que necesita reparación inmediata. Este tratamiento revitalizador capilar renueva el cabello en tan solo 5-7 minutos, restaurando las proteínas de la fibra capilar que han sido dañadas por procesos químicos o por el uso de herramientas térmicas para realizar peinados y estilismos. Su fórmula profundamente reparadora y de alto rendimiento es rica aceite de argán, manteca de karité y proteínas reparadoras que restauran la elasticidad del cabello y renuevan su fortaleza desde dentro hacia fuera.</p>">
+            <img src="img/productos/img36.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--        -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img37.jpg" data-caption="<h2>CHAMPÚ EXTRA VOLUMEN</h2><h4>250ml - 24,50€</h4><p>Aporte al cabello seco y deshidratado toda la hidración que tanto necesita. El Champú Hidratante Moroccanoil® acondiciona el cabello con aceite de argán rico en antioxidantes, vitamina A, vitamina E, y algas rojas para lograr un cabello que se ve y se siente más saludable. Este suave champú hidratante es adecuado para uso diario y provee óptima hidratación para cabello normal y teñido. Aumenta la manejabilidad, suavidad y brillo de su cabello. No altera el color. Sin sulfatos, fosfatos ni parabenos.</p>">
+            <img src="img/productos/img37.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img38.jpg" data-caption="<h2>ACONDICIONADOR EXTRA VOLUMEN</h2><h4>250ml - 26,50€</h4><p>Desenreda suavemente su cabello mientras añade volumen. El Acondicionador Extra Volumen Moroccanoil® provee volumen, cuerpo, brillo, y manejabilidad al cabello fino sin hacerlo más pesado o comprimido. Impregnado con aceite de argán rico en antioxidantes y nutrientes revitalizantes, incluyendo extracto de brotes de tilo, este acondicionador voluminizador transforma el cabello de inerte a lleno de vida. No altera el color. Sin sulfatos, fosfatos ni parabenos.</p>">
+            <img src="img/productos/img38.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img39.jpg" data-caption="<h2>ESPUMA VOLUMIZANTE</h2><h4>250ml - 28,50€</h4><p>Dé a su cabello volumen y realce inmediato con la Espuma Voluminizadora Moroccanoil®, ideal para cabello medio o fino. Este voluminizador para crear estilos y peinados, provee cuerpo y volumen al cabello sin resultados pegajosos. Nuestra fórmula libre de escamas proporciona fijación media y flexible. Asimismo, incluye un factor de ”memoria” que ayuda a lograr estilos de cabello naturales y duraderos. Impregnado con aceite de argán rico en antioxidantes y un agente anti-estática para obtener un cabello completamente sedoso y manejable.</p>">
+            <img src="img/productos/img39.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img40.jpg" data-caption="<h2>VOLUMINIZADOR DE RAÍCES</h2><h4>250ml - 28,50€</h4><p>Para el máximo cabello con pleno volumen, el estimulador de raíces está diseñado para ofrecer volumen y movimiento al preparar las raíces con una potente base texturizada antes de peinar con calor. Fórmula nutritiva de alto rendimiento que amplifica el volumen de inmediato en las raíces y engrosa cada hebra para darle textura y forma, de manera que el volumen nunca se pierda.• Enriquecido con aceite de argán para nutrir tanto el cabello como el cuero cabelludo• Fortifica y engrosa desde la raíz • Textura voluminosa perdurable con un acabado natural • Ayuda a controlar la estática
+                <strong>AWARDS</strong>
+                Mujerhoy.com Beauty Awards, Hair Styling Product, Mujerhoy.com, 2015</p>">
+            <img src="img/productos/img40.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--        -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img41.jpg" data-caption="<h2>CHAMPÚ SUAVIZANTE</h2><h4>250ml - 26,50€</h4><p>Suavice y controle el cabello rebelde y encrespado con esta suave fórmula limpiadora. El Champú Suavizante Moroccanoil®, con nuestro exclusivo ingrediente AminoRenew™, restaura los aminoácidos vencidos para fortalecer y alinear la estructura de la queratina natural del cabello. A base de aceite de argán y mantequilla de argán, este champú hidratante le proporciona un cabello suave, liso, de apariencia saludable y manejable. 
+                Al usarse junto al Acondicionador Suavizante Moroccanoil®, los resultados pueden durar hasta 72 horas.</p>">
+            <img src="img/productos/img41.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img42.jpg" data-caption="<h2>ACONDICIONADOR SUAVIZANTE</h2><h4>250ml - 28,50€</h4><p>Esta fórmula acondiciona, desenreda, suaviza y controla el cabello rebelde y encrespado. El Acondicionador Suavizante Moroccanoil®, incluye nuestro ingrediente exclusivo AminoRenew™, que restaura los aminoácidos vencidos para fortalecer y alinear la estructura de la queratina natural del cabello. Las hebras se nutren instantáneamente con aceite de argán antioxidante y mantequilla de argán, dejando el cabello suave, liso, de apariencia saludable y manejable. Al usarse junto al Champú Suavizante Moroccanoil, los resultados pueden durar hasta 72 horas.</p>">
+            <img src="img/productos/img42.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img43.jpg" data-caption="<h2>MASCARILLA SUAVIZANTE</h2><h4>250ml - 45,50€</h4><p>Esta mascarilla altamente altamente concentrada con mantecaa de argán, suaviza y controla el cabello rebelde y encrespado. La Mascarilla Suavizante Moroccanoil® está enriquecida con manteca de argán, aceite de argán y ácidos grasos derivados del coco para hidratar y nutrir profunda e intensamente. El cabello queda suave, liso y manejable. Proporciona acondicionamiento duradero a la vez que mejora la elasticidad del cabell</p>">
+            <img src="img/productos/img43.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img44.jpg" data-caption="<h2>LOCIÓN SUAVIZANTE</h2><h4>300ml - 28,50€</h4><p>Loción multiuso para el secado con secador que deja el cabello suave y sedoso. Permite crear estilos y peinados fácilmente y sin esfuerzo. La Loción Suavizante Moroccanoil® combina los beneficios de los productos Moroccanoil de mayor venta incluyendo el nutritivo aceite de argán, mantequilla de argán, Vitamina E, y ácidos grasos esenciales que dejan el cabello acariciable, suave y manejable. La fórmula ligera proporciona fijación media y definición mientras controla el encrespado y resiste la humedad logrando un cabello lujosamente suave.</p>">
+            <img src="img/productos/img44.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--        -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img45.jpg" data-caption="<h2>CREMA INTENSA PARA RIZOS</h2><h4>300ml - 34,50€</h4><p>Para rizos naturales y ondas que lucen brillantes, con forma, y hermosamente frescos. La Crema Intensa para Rizos Moroccanoil® es un acondicionador sin enjuague que define, hidrata los rizos, y combate el encrespamiento sin dejar residuos pegajosos. Impregnada con el nutritivo aceite de argán y vitaminas para hacer que el cabello ondulado y rizado luzca hidratado y acariciable todo el día.</p>">
+            <img src="img/productos/img45.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img46.jpg" data-caption="<h2>CREMA MOLDEADORA DE RIZOS</h2><h4>250ml - 35,50€</h4><p>Dé forma y active fácilmente sus rizos mientras hidrata su cabello. La Crema Moldeadora de Rizos Moroccanoil® es uno de nuestros productos más populares para el cabello rizado. Este moldeador y definidor de forma impregnado de aceite de argán, contiene una tecnología avanzada, activada por calor, que proporciona un factor de memoria para combatir el encrespamiento y crear rizos bien definidos, duraderos, con apariencia natural y movimiento.</p>">
+            <img src="img/productos/img46.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img47.jpg" data-caption="<h2>ESPUMA CONTROL DE RIZOS</h2><h4>150ml - 21,00€</h4><p>Controle el cabello rizado o muy rizado sin problemas: La Espuma Control de Rizos Moroccanoil® controla, define, y provee fijación durante horas, mientras sella la humedad y previene el cabello encrespado en cualquier tipo de clima. Su poderosa y liviana fórmula impregnada de aceite de argán deja el cabello suave, con textura natural, y sin residuos pegajosos.</p>">
+            <img src="img/productos/img47.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img48.jpg" data-caption="<h2>ESPUMA ONDAS DE PLAYA</h2><h4>175ml - 28,50€</h4><p>Consiga un cabello con textura de playa durante todo el año con la Espuma Ondas de Playa Moroccanoil®, la versión avanzada del tradicional spray de agua de mar. La fórmula única de la Espuma Ondas de Playa Moroccanoil® proporciona textura y estilo sin deshidratar el cabello. Creado en forma de espuma para una mejor aplicación y control durante el peinado. Este producto es ideal para crear ondas y looks naturalmente despeinados por el viento, con fijación flexible que dura todo el día. La fórmula absorbe los rayos UV para proteger el cabello contra los daños del sol y mantener la vitalidad y brillo del color. Proporciona un acabado con efecto y textura de playa que no deshidrata el cabello ni lo deja tieso o pegajoso.</p>">
+            <img src="img/productos/img48.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--        -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img49.jpg" data-caption="<h2>SPRAY TEXTURIZANTE SECO</h2><h4>205ml - 28,50€</h4><p>Spray seco enriquecido con aceite de argán para crear peinados fáciles, naturales, despeinados, con textura y fijación duradera. Utilice el Spray Texturizante Seco Moroccanoil para finalizar looks de cabello suelto con volumen y textura. También, puede utilizarlo para preparar el cabello y aportar más fijación a trenzas, moños o recogidos. La formulación de alto desempeño a base de resinas y zeolita crea enlaces en el cabello y proporcionan una fijación texturizada con acabado seco y arenoso.</p>">
+            <img src="img/productos/img49.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img50.jpg" data-caption="<h2>PASTA TEXTURIZADORA</h2><h4>250ml - 35,50€</h4><p>Fórmula efectiva y flexible de arcilla que define y esculpe para crear looks naturales con acabado mate y fijación fuerte. La Pasta Texturizadora Moroccanoil® contiene una mezcla de aceite de argán, manteca de Karité y arcilla de bentonita para obtener textura de mechones irregulares. Consiga estilos versátiles a su medida con esta herramienta unisex, ideal tanto para cabello corto como largo, que le permitirá jugar con su cabello antes de fijar el nivel de textura deseado. Controla el encrespamiento durante todo el día y proporciona un acabado no grasoso o pegajoso.</p>">
+            <img src="img/productos/img50.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img51.jpg" .jpg data-caption="<h2>CHAMPÚ SECO TONOS CLAROS</h2><h4>205ml - 27,00€</h4><p>El color del cabello es algo personal. El champú seco debe serlo también. Por demanda popular, Moroccanoil® lanza por primera vez champú seco en dos fórmulas. Para cabellos de tonos claros y para cabellos de tonos oscuros. El Champú Seco Tonos Claros Moroccanoil® contiene almidones ultra finos de arroz que absorben la grasa y los olores dejando el cabello renovado, fresco y con volumen. La fórmula, impregnada con aceite de argán, provee protección UV y contiene matices violetas para equilibrar los tonos cobrizos en cabellos rubios, y resaltar lo mejor en cabellos con tonos claros.</p>">
+            <img src="img/productos/img51.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img52.jpg" data-caption="<h2>CHAMPÚ SECO TONOS OSCUROS</h2><h4>205ml - 27,00€</h4><p>El color del cabello es algo personal. El champú seco debe serlo también. Presentamos nuestro champú seco en dos fórmulas. Para cabellos de tonos oscuros y para cabellos de tonos claros. El Champú Seco Oscuros Moroccanoil® contiene almidones ultra finos de arroz que absorben la grasa y los olores dejando el cabello limpio y fresco. La fórmula, impregnada con aceite de argán, provee protección UV y actúa de inmediato sin dejar residuos opacos mientras mantiene la riqueza natural de los tonos de cabellos oscuros y morenos.<strong>AWARDS</strong>AR Beauty Awards, Producto más práctico para el cabello, AR Revista, 2017 </p>">
+            <img src="img/productos/img52.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--        -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img53.jpg" data-caption="<h2>CREMA MOLDEADORA</h2><h4>100ml - 28,50€</h4><p>Ideal para moldear, esculpir, y crear diseños y estilos en cabellos texturizados. La Crema Moldeadora Moroccanoil® es una crema flexible a base de fibras para engrosar y crear múltiples estilos de cabello con textura natural y definición. Estilos que van desde looks vistos detrás de los escenarios a estilos de calle. Enriquecida con aceite de argán para hidratar y nutrir el cabello, esta crema provee estilos con estructura, fijación flexible duradera, y acabados semi-mate.</p>">
+            <img src="img/productos/img53.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img54.jpg" data-caption="<h2>BRILLO INTENSO</h2><h4>100ml - 27,50€</h4><p>Añada el toque final perfecto a cualquier estilo o peinado y logre un cabello hermoso y brillante. El Brillo Intenso Moroccanoil® es un spray para dar acabado final que atrae y refleja la luz dando un hermoso brillo al cabello. Impregnado con aceite de argán, vitaminas y antioxidantes, este spray crea un velo invisible de pura luminosidad y brillo que ayuda a proteger el cabello contra los agentes ambientales dañinos como el sol, agua salada, y el cloro. Este producto realza el color del cabello y lo refleja hermosamente bajo cualquier tipo de luz. No contiene alcohol.</p>">
+            <img src="img/productos/img54.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img55.jpg" .jpg data-caption="<h2>SPRAY DE FIJACIÓN LUMINOSO MEDIO</h2><h4>330ml - 24,50€</h4><p>Este spray con fijación media y flexible provee soporte duradero para estilos suaves y naturales. El Fijador Luminoso Medio Moroccanoil® es un spray liviano y flexible que envuelve el cabello en un reluciente escudo protector contra el encrespamiento y la humedad, a la vez que se cepilla fácilmente sin dejar residuos pegajosos. Impregnado con una combinación de ingredientes avanzados que incluyen el nutritivo aceite de argán rico en antioxidantes, este spray de fijación media es ideal para crear estilos naturales, incluyendo recogidos de cabellos suaves como moños de bailarina, y colas de caballo) y secados.</p>">
+            <img src="img/productos/img55.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img56.jpg" data-caption="<h2>SPRAY DE FIJACIÓN LUMINOSO FUERTE</h2><h4>330ml - 24,50€</h4><p>El Fijador Luminoso Fuerte Moroccanoil® es un spray para crear estilos duraderos con fijación flexible y fuerte. Su fórmula liviana y flexible envuelve el cabello en un reluciente escudo protector contra el encrespamiento y la humedad, a la vez que se cepilla fácilmente sin dejar residuos pegajosos. Impregnado con una combinación de ingredientes avanzados que incluyen el aceite de argán rico en antioxidantes, este spray de fijación fuerte es ideal para crear estilos de cabello recogido, y puede ser usado como base para la creación de trenzas.</p>">
+            <img src="img/productos/img56.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+<!--        -->
+       <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img57.jpg" data-caption="<h2>FIJADOR LUMINOSO EXTRA FUERTE</h2><h4>330ml - 24,50€</h4><p>Nuestro spray con fijación extra fuerte provee soporte duradero para los estilos de cabello más exigentes. El Fijador Luminoso Extra Fuerte Moroccanoil® es el spray ideal para estilos y peinados a llevar durante eventos especiales incluyendo elegantes colas de caballo, y moños chignons que se ven en la alfombra roja. Esta fórmula de alto desempeño con fijación extra fuerte, está impregnada de aceite de argán y envuelve el cabello en un reluciente escudo protector contra el encrespamiento y la humedad, a la vez que se cepilla fácilmente sin dejar residuos pegajosos.</p>">
+            <img src="img/productos/img57.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img58.jpg" data-caption="<h2>CEPILLO REDONDO DE CERÁMICA 25 MM</h2><h4>21,50€</h4><p>Hecho con materiales de primera calidad que contienen propiedades iónicas y cerámicas, permitiendo así una distribución uniforme del calor. Mejora el tiempo de secado y deja el cabello brillante.  El Cepillo Redondo de Cerámica 25 mm Moroccanoil es una herramienta de primera calidad para crear estilos y peinados en cabellos cortos, medios y largos. Contiene sugerencias para dividir el cabello (incluidas en el mango). </p>">
+            <img src="img/productos/img58.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img59.jpg" .jpg data-caption="<h2>CEPILLO REDONDO DE CERÁMICA 35 MM</h2><h4>27,00€</h4><p>Hecho con materiales de primera calidad que contienen propiedades iónicas y cerámicas, permitiendo así una distribución uniforme del calor. Mejora el tiempo de secado y deja el cabello brillante.  El Cepillo Redondo de Cerámica 35 mm Moroccanoil es una herramienta de primera calidad para crear estilos y peinados en cabellos cortos, medios y largos. Contiene sugerencias para dividir el cabello (incluidas en el mango). </p>">
+            <img src="img/productos/img59.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img60.jpg" data-caption="<h2>CEPILLO REDONDO DE CERÁMICA 45 MM</h2><h4>30,50€</h4><p>El Fijador Luminoso Fuerte Moroccanoil® es un spray para crear estilos duraderos con fijación flexible y fuerte. Su fórmula liviana y flexible envuelve el cabello en un reluciente escudo protector contra el encrespamiento y la humedad, a la vez que se cepilla fácilmente sin dejar residuos pegajosos. Impregnado con una combinación de ingredientes avanzados que incluyen el aceite de argán rico en antioxidantes, este spray de fijación fuerte es ideal para crear estilos de cabello recogido, y puede ser usado como base para la creación de trenzas.</p>">
+            <img src="img/productos/img60.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+<!--        -->
+       <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img61.jpg" data-caption="<h2>CEPILLO REDONDO DE CERÁMICA 55 MM</h2><h4>32,50€</h4><p>Nuestro spray con fijación extra fuerte provee soporte duradero para los estilos de cabello más exigentes. El Fijador Luminoso Extra Fuerte Moroccanoil® es el spray ideal para estilos y peinados a llevar durante eventos especiales incluyendo elegantes colas de caballo, y moños chignons que se ven en la alfombra roja. Esta fórmula de alto desempeño con fijación extra fuerte, está impregnada de aceite de argán y envuelve el cabello en un reluciente escudo protector contra el encrespamiento y la humedad, a la vez que se cepilla fácilmente sin dejar residuos pegajosos.</p>">
+            <img src="img/productos/img61.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img62.jpg" data-caption="<h2>CEPILLO PLANO DE CERÁMICA</h2><h4>21,50€</h4><p>Hecho con materiales de primera calidad que contienen propiedades iónicas y cerámicas, permitiendo así una distribución uniforme del calor. Mejora el tiempo de secado y deja el cabello brillante.  El Cepillo Plano de Cerámica Moroccanoil es una herramienta de primera calidad para crear estilos y peinados en cabellos cortos, medios y largos. Contiene sugerencias para dividir el cabello (incluidas en el mango). </p>">
+            <img src="img/productos/img62.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img63.jpg" .jpg data-caption="<h2>CEPILLO REDONDO DE CERDAS DE JABALÍ 25 MM</h2><h4>55,50€</h4><p>Seca y crea pequeñas ondas en cabellos cortos con el Cepillo Redondo de Cerdas de Jabalí 25 mm Moroccanoil®. Los cepillos de cerdas de jabalí Moroccanoil son elaborados con materiales de la más alta calidad, proporcionando una experiencia superior en el cuidado del cabello mientras promueven una cabellera sana, luminosa y manejable. De eficiencia comprobada por famosas celebridades y sobre la pasarela, los cepillos de cerdas de jabalí Moroccanoil logran excelentes resultados en todo tipo de cabello. Asimismo, nutren y estimulan el cabello al masajear suavemente el cuero cabelludo y deslizar los aceite naturales hasta las puntas. El resultado: su uso frecuente proporciona una cabellera más saludable, suave y manejable. El diseño uniforme y el mango liviano de madera de Fresno resistente al calor, facilitan el peinado del cabello.</p>">
+            <img src="img/productos/img63.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img64.jpg" data-caption="<h2>CEPILLO REDONDO DE CERDAS DE JABALÍ 35 MM</h2><h4>64,50€</h4><p>Seca y crea ondas sueltas en cabellos de longitud media con el Cepillo Redondo de Cerdas de Jabalí 35 mm Moroccanoil®. Los cepillos de cerdas de jabalí Moroccanoil son elaborados a mano con materiales de la más alta calidad, proporcionando una experiencia superior en el cuidado del cabello mientras promueven una cabellera sana, luminosa y manejable. De eficiencia comprobada por famosas celebridades y sobre la pasarela, los cepillos de cerdas de jabalí Moroccanoil logran excelentes resultados en todo tipo de cabello. Asimismo, nutren y estimulan el cabello al masajear suavemente el cuero cabelludo y deslizar los aceite naturales hasta las puntas. El resultado: su uso frecuente proporciona una cabellera más saludable, suave y manejable. El diseño uniforme y el mango liviano de madera de Fresno resistente al calor, facilitan el peinado del cabello.</p>">
+            <img src="img/productos/img64.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+<!--        -->
+       <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img65.jpg" data-caption="<h2>CEPILLO REDONDO DE CERDAS DE JABALÍ 45 MM</h2><h4>70,00€</h4><p>Logre un secado voluminoso, sedoso y de apariencia perfecta con el Cepillo Redondo de Cerdas de Jabalí 45 mm Moroccanoil®. Los cepillos de cerdas de jabalí Moroccanoil son elaborados a mano con materiales de la más alta calidad, proporcionando una experiencia superior en el cuidado del cabello mientras promueven una cabellera sana, luminosa y manejable. De eficiencia comprobada por famosas celebridades y sobre la pasarela, los cepillos de cerdas de jabalí Moroccanoil logran excelentes resultados en todo tipo de cabello. Asimismo, nutren y estimulan el cabello al masajear suavemente el cuero cabelludo y deslizar los aceite naturales hasta las puntas. El resultado: su uso frecuente proporciona una cabellera más saludable, suave y manejable. El diseño uniforme y el mango liviano de madera de Fresno resistente al calor, facilitan el peinado del cabello.</p>">
+            <img src="img/productos/img65.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img66.jpg" data-caption="<h2>CEPILLO CLÁSICO DE CERDAS DE JABALÍ</h2><h4>55,50€</h4><p>El cepillado diario y la creación de estilos nunca han sido tan fáciles gracias al Cepillo Clásico de Cerdas de Jabalí Moroccanoil Los cepillos de cerdas naturales de jabalí Moroccanoil son elaborados a mano con materiales de la más alta calidad, proporcionando una experiencia superior en el cuidado del cabello mientras promueven una cabellera sana, luminosa y manejable. De eficiencia comprobada por famosas celebridades y sobre la pasarela, los cepillos clásicos de cerdas de jabalí Moroccanoil logran excelentes resultados en todo tipo de cabello. Asimismo, nutren y estimulan el cabello al masajear suavemente el cuero cabelludo y deslizar los aceite naturales hasta las puntas. El resultado: su uso frecuente proporciona una cabellera más saludable, suave y manejable. El diseño uniforme y el mango liviano de madera de Fresno resistente al calor, facilitan el peinado del cabello.</p>">
+            <img src="img/productos/img66.jpg" width="100%">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 grieta">
+                <a data-fancybox="gallery" href="img/productos/img67.jpg" .jpg data-caption="<h2>CEPILLO CARDADOR DE CERDAS DE JABALÍ</h2><h4>30,00€</h4><p>Crea estilos voluminosos y con mucho cuerpo con el cepillo Cardador de Cerdas de Jabalí Moroccanoil®, diseñado exclusivamente para cardar el cabello. Los cepillos de cerdas naturales de jabalí Moroccanoil son elaborados a mano con materiales de la más alta calidad, proporcionando una experiencia superior en el cuidado del cabello mientras promueven una cabellera sana, luminosa y manejable. De eficiencia comprobada por famosas celebridades y sobre la pasarela, los cepillos de cerdas naturales de jabalí Moroccanoil logran excelentes resultados en todo tipo de cabello. Asimismo, nutren y estimulan el cabello al masajear suavemente el cuero cabelludo y deslizar los aceite naturales hasta las puntas. El resultado: su uso frecuente proporciona una cabellera más saludable, suave y manejable. El diseño uniforme y el mango liviano de madera de Fresno resistente al calor, facilitan el peinado del cabello.</p>">
+            <img src="img/productos/img67.jpg" width="100%">
+                </a>
+            </div>
+        </div>
+        <!--AQUÍ ACABA LA SEGUNDA MARCA-->
+    </div>
+
+    <div class="prueba">
+    </div>
+
+    <!--Desde aqui no tocar en todas las urls mantener igual-->
+    <footer class="container-fluid">
+        <div class="row pasillo">
+            <div class="bloquepie col-sm-12 col-md-12 col-lg-4">
+                <h3>Formas de contacto</h3>
+                <hr class="linea">
+                <div class="mediofuter1">
+                    <h2>Dirección postal:</h2>
+                    <p>C/Isabel II Nº6</p>
+                    <p>CP: 20011</p>
+                    <p>Donostia, Guipúzcoa</p>
+                </div>
+                <div class="mediofuter2">
+                    <h2>Telefono:</h2>
+                    <p>+34 943 10 99 03</p>
+                    <h2>Email:</h2>
+                    <p>hola@peluqueriadiagonal.com</p>
+                    <h2>Redes Sociales:</h2>
+                    <div class="redes">
+                        <a class="red" href="" target="_blank"><i class="fab fa-facebook-f" title="Facebook"></i></a>
+                        <a class="red" href="" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a>
+                        <a class="red" href="" target="_blank"><i class="fab fa-tumblr" title="Tumblr"></i></a>
+                        <a class="red" href="https://www.instagram.com/Peluqueria_Diagonal_SS/" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
+                    </div>
+                </div>
+                <div class="bloquepie3">
+                    <hr class="linea">
+                    <div class="airetop">
+                        <a href="index.html"><img src="img/logotipo.png" width="100%"></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="bloquepie col-sm-12 col-md-12 col-lg-4">
+                <h3>Buzón de sugerencias</h3>
+                <hr class="linea">
+                <form name="formulario_contacto" method="POST" action="correo.php" id="form">
+                    <input name="nombre" maxlength="50" type="text" placeholder="NOMBRE">
+                    <input id="email" name="email" type="email" placeholder="E-MAIL">
+                    <input type="tel" name="phone" placeholder="TELEFONO">
+                    <input type="text" name="asunto" placeholder="ASUNTO">
+                    <textarea id="message" name="message" type="text" placeholder="MENSAJE"></textarea>
+                    <input id="submit" type="submit" value="ENVIAR!">
+
+                </form>
+            </div>
+
+            <div class="bloquepie col-sm-12 col-md-12 col-lg-4">
+               
+                <h3>Enlaces internos</h3>
+                <hr class="linea">
+                
+                <div class="mediofuter1">
+                    <h2>Inicio:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="index.html#ancla-00"><p>Inicio</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-01"><p>Borja</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-02"><p>Horario</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-03"><p>Servicios</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-04"><p>Catálogo</p></a>
+                    </li>
+                    <li>
+                        <a href="index.html#ancla-05"><p>Pie de página</p></a>
+                    </li>
+                    </ul>
+                    
+                    <h2>Catalogo:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="catalogo.html#ancla-01"><p>Balmain</p></a>
+                    </li>
+                    <li>
+                        <a href="catalogo.html#ancla-02"><p>Morocanoil</p></a>
+                    </li>
+                    </ul>
+                </div>
+                
+                <div class="mediofuter2">
+                    <h2>Contacto:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="contacto.html#ancla-01"><p>Formulario de contacto</p></a>
+                    </li>
+                    <li>
+                        <a href="contacto.html#ancla-02"><p>Pie de página</p></a>
+                    </li>
+                    </ul>
+                    
+                    <h2>Donde estamos:</h2>
+                    <ul class="linksfooter">
+                    <li>
+                        <a href="media.html#ancla-01"><p>Transportes</p></a>
+                    </li>
+                    <li>
+                        <a href="media.html#ancla-02"><p>Mapa</p></a>
+                    </li>
+                    <li>
+                        <a href="media.html#ancla-03"><p>Pie de página</p></a>
+                    </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="subpie">
+            <hr class="linea">&#169; Copyright. Web site diseñado y desarrollado por <a href="http://alm-area.com/weblanbide/txema/portfolio/" target="_blank">Txema Illarramendi Jimeno.</a>
+        </div>
+    </footer>
+</body>
+</html>
